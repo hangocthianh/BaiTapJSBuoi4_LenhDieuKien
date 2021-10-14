@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập JS Buổi 4 - Lệnh Điều Kiện</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="w-75 p-5 m-auto">
+        <h1 class="text-secondary">Bài Tập JS Buổi 4 - Lệnh Điều Kiện</h1>
+        <!-- Xuất 3 số theo thứ tự tăng dần -->
+        <div class="w-100 pb-5">
+            <h2 class="text-info">1. Viết chương trình xuất 3 số theo thứ tự tăng dần.</h2>
+            <h3>Hãy nhập 3 số nguyên bất kỳ:</h3>
+            <form>
+                <div class="form-row align-items-center">
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="num1">Số thứ 1</label>
+                        <input type="number" class="form-control" id="num1" placeholder="Nhập số thứ 1">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="num2">Số thứ 2</label>
+                        <input type="number" class="form-control" id="num2" placeholder="Nhập số thứ 2">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="num3">Số thứ 3</label>
+                        <input type="number" class="form-control" id="num3" placeholder="Nhập số thứ 3">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info px-4 mt-2" id="btnsapXep">Sắp xếp</button>
+            </form>
+            <div class="w-75 border border-success rounded px-1 bg-light mt-2">
+                <i class="bi bi-arrow-right" style="font-size: 30px;"></i>
+                <span id="sapXep" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+        </div>
+
+
+        <!-- “Chào hỏi” các thành viên trong gia đình -->
+        <div class="w-100 pb-5">
+            <h2 class="text-info">2. Viết chương trình “Chào hỏi” các thành viên trong gia đình.</h2>
+            <form>
+                <div class="form-group w-75">
+                    <label for="member">Bạn là:</label>
+                    <select class="form-control" id="member">
+                        <option>Chọn thành viên</option>
+                        <option value="B">Bố</option>
+                        <option value="M">Mẹ</option>
+                        <option value="A">Anh trai</option>
+                        <option value="E">Em gái</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-info px-4" id="btnHello">Gửi lời chào!</button>
+            </form>
+            <div class="w-75 border border-success rounded px-1 bg-light mt-2">
+                <i class="bi bi-arrow-right" style="font-size: 30px;"></i>
+                <span id="greeting" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+        </div>
+
+
+        <!-- Xuất ra có bao nhiêu số lẻ và bao nhiêu số chẵn
+-->
+        <div class="w-100 pb-5">
+            <h2 class="text-info">3. Viết chương trình xuất ra có bao nhiêu số lẻ và bao nhiêu số chẵn.</h2>
+            <h3>Hãy nhập 3 số nguyên bất kỳ:</h3>
+            <form>
+                <div class="form-row align-items-center">
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="number1">Số thứ 1</label>
+                        <input type="number" class="form-control" id="number1" placeholder="Nhập số thứ 1">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="number2">Số thứ 2</label>
+                        <input type="number" class="form-control" id="number2" placeholder="Nhập số thứ 2">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only" for="number3">Số thứ 3</label>
+                        <input type="number" class="form-control" id="number3" placeholder="Nhập số thứ 3">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info px-4 mt-2" id="btnOddEven">Đếm</button>
+            </form>
+            <div class="w-75 border border-success rounded px-1 bg-light mt-2">
+                <i class="bi bi-arrow-right" style="font-size: 30px;"></i>
+                <span id="oddEven" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Hãy cho biết đó là tam giác gì? -->
+        <div class="w-100 pb-5">
+            <h2 class="text-info">4. Viết chương trình cho nhập 3 cạnh của tam giác. Hãy cho biết đó là tam giác gì?</h3>
+            <form>
+                <div class="form-row align-items-center">
+                    <div class="col-sm-3 my-1">
+                        <label for="edge1">Cạnh thứ 1</label>
+                        <input type="number" class="form-control" id="edge1" placeholder="Nhập cạnh thứ 1">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label for="edge2">Cạnh thứ 2</label>
+                        <input type="number" class="form-control" id="edge2" placeholder="Nhập cạnh thứ 2">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label for="edge3">Cạnh thứ 3</label>
+                        <input type="number" class="form-control" id="edge3" placeholder="Nhập cạnh thứ 3">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info px-4 mt-2" id="btnTriangle">Đây là tam giác?</button>
+            </form>
+            <div class="w-75 border border-success rounded px-1 bg-light mt-2">
+                <i class="bi bi-arrow-right" style="font-size: 30px;"></i>
+                <span id="triangle" style="font-size: 25px;" class="text-danger"></span>
+            </div>
+        </div>
+
+
+        <!-- Viết chương trình tìm ngày, tháng, năm của ngày tiếp theo và ngày trước đó. -->
+        <div class="w-100 pb-5">
+            <h2 class="text-info">5. Viết chương trình tìm ngày, tháng, năm của ngày tiếp theo và ngày trước đó.</h3>
+            <form>
+                <div class="form-row align-items-center">
+                    <div class="col-sm-3 my-1">
+                        <label for="day">Ngày</label>
+                        <input type="number" class="form-control" id="day" placeholder="Nhập ngày">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label for="month">Tháng</label>
+                        <input type="number" class="form-control" id="month" placeholder="Nhập tháng">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label for="year">Năm</label>
+                        <input type="number" class="form-control" id="year" placeholder="Nhập năm">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info px-4 mt-2" id="btnBefore">Ngày hôm qua</button>
+                <button type="button" class="btn btn-info px-4 mt-2" id="btnAfter">Ngày mai</button>
+            </form>
+            <div class="w-75 border border-success rounded px-1 bg-light mt-2">
+                <i class="bi bi-arrow-right" style="font-size: 30px;"></i>
+                <span id="before" style="font-size: 20px; display: none;" class="text-danger"></span>
+                <span id="after" style="font-size: 20px;display: none;" class="text-danger"></span>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+
+
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- MAIN SCRIPT -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
