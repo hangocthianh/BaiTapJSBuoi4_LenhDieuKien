@@ -286,26 +286,17 @@ function dayAfter(){
 
     if(month == 1){
         if(day == 1){
-            dayBefore = 31;
-            monthBefore = 12;
-            yearBefore = year - 1;
-            dayAfter = day + 1;
-            monthAfter = month;
-            yearAfter = year;
+            day = day + 1;
+            month = month;
+            year = year;
         } else if (day == 31){
-            dayBefore = day - 1;
-            monthBefore = month;
-            yearBefore = year;
-            dayAfter = 1;
-            monthAfter = month + 1;
-            yearAfter = year;
+            day = 1;
+            month = month + 1;
+            year = year;
         } else if (day > 1 && day < 31){
-            dayBefore = day - 1;
-            monthBefore = month;
-            yearBefore = year;
-            dayAfter = day + 1;
-            monthAfter = month;
-            yearAfter = year;
+            day = day + 1;
+            month = month;
+            year = year;
         } else {
             day = "Ngày không đúng";
         }
